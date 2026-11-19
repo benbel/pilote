@@ -489,7 +489,7 @@ def grab_foreground(hwnd, seconds):
 def keep_foreground(hwnd):
     if not hwnd:
         return
-    threading.Thread(target=grab_foreground, args=[hwnd, 6], daemon=True).start()
+    threading.Thread(target=grab_foreground, args=[hwnd, 1], daemon=True).start()
 
 
 def copy_to_clipboard(text):
