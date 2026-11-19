@@ -11,3 +11,10 @@ Puis :
 ```powershell
 python pilote.py
 ```
+ou
+
+
+```powershell
+scoop shim add pilote (Get-Command python).Source "$PWD\pilote.py"
+pilote
+```
